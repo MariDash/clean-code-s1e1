@@ -114,7 +114,7 @@ li > * {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+li > p {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -133,7 +133,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed-tasks p {
   text-decoration: line-through;
   color: #888;
 }
@@ -148,6 +148,6 @@ ul li.editMode input[type=text] {
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.editMode p {
   display: none;
 }
