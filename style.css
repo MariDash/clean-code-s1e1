@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -37,7 +37,7 @@ body {
 .form{
   display: flex;
 }
-ul {
+.list {
   margin: 0;
   padding: 0px;
 }
@@ -46,7 +46,7 @@ h3 {
   list-style: none;
 }
 input,
-.btn {
+button {
   outline: none;
 }
 .btn {
@@ -62,8 +62,8 @@ input,
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.section__name,
+.add-item__name {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +89,7 @@ label[for="new-task"] {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-item__name {
   display: block;
   margin: 0 0 20px;
 }
@@ -98,7 +98,7 @@ label[for="new-task"] {
 }
 
 /* Task list */
-li {
+.list > * {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -107,20 +107,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
-li > p {
+.list .task:not(.section__input) {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    .section__input {
+.section__input:not(.add-item__input) {
   width: 226px;
 }
 .btn__image {
@@ -139,15 +139,15 @@ li >    .section__input {
 }
 
 /* Edit Task */
-ul li .section__input {
+.section__input:not(.add-item__input) {
   display: none;
 }
 
-ul li.list__item_edit .section__input {
+.list__item_edit .section__input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.list__item_edit p {
+.list__item_edit .task:not(.section__input) {
   display: none;
 }
