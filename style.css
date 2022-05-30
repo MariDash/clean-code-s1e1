@@ -4,22 +4,22 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.information {
+.info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.information__img {
+.info__img {
   width: 100%;
 }
-.information__link {
+.info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .information { 
+  .info { 
     text-align: center;
   }
 
@@ -46,10 +46,10 @@ h3 {
   list-style: none;
 }
 input,
-button{
+.btn {
   outline: none;
 }
-.button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -58,7 +58,7 @@ button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -123,12 +123,12 @@ li > p {
 li >    .section__input {
   width: 226px;
 }
-.button__image {
+.btn__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button__image:hover {
+.btn__image:hover {
   transform: rotateZ(0);
 }
 
